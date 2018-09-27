@@ -23,7 +23,7 @@ namespace RandomPasscode.Controllers
             ViewBag.String = HttpContext.Session.GetInt32("random");
             return View();
         }
-        [HttpGet]
+        [HttpPost]
         [Route("redirect")]
         public IActionResult redirect()
         {
